@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/glue/glue_{{ version }}.tar.gz
   sha256: 19275b34ee6a1bcad05360b7eb996cebaa1402f189a5dfb084e695d423f2296e
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
